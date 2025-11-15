@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         question.setOnClickListener {
             question.visibility = View.INVISIBLE
-            reponse.visibility = View.INVISIBLE
+            reponse.visibility = View.VISIBLE
         }
     }
 }
