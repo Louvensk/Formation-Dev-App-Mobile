@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,17 +11,68 @@
         android:id="@+id/Question"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:text="Ki moun ou ye ?"
-        android:textSize="50sp"
-        android:gravity="center" />
+        android:gravity="center"
+        android:text="Ki manje Fred pi renmen ?"
+        android:background="@drawable/card_backgroud"
+        android:textColor="@color/white"
+        android:elevation="8dp"
+        android:textSize="40sp" />
 
     <TextView
-        android:id="@+id/Reponse"
+        android:id="@+id/Reponse1"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:text="Moun ou pa konnen an."
-        android:textSize="40dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/Question"
+        android:background="#3038ab"
+        android:textColor="@color/white"
+        android:text="Diri kole"
+        android:textSize="40dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/Reponse2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/Reponse1"
+        android:background="#3038ab"
+        android:textColor="@color/white"
+        android:text="Mayi a fey"
+        android:textSize="40dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/Reponse3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/Reponse2"
+        android:background="#3038ab"
+        android:textColor="@color/white"
+        android:text="Diri sos pwa lalo"
+        android:textSize="40dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Reponse3"
+        android:layout_marginTop="230dp"
+        app:srcCompat="@drawable/ouvri" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Reponse3"
+        android:layout_marginTop="230dp"
         android:visibility="invisible"
+        app:srcCompat="@drawable/fermer" />
 
 </RelativeLayout>
